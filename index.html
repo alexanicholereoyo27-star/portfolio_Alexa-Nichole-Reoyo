@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexa Nichole Reoyo | Computer Engineering Portfolio</title>
+  <meta name="description" content="Computer Engineering Portfolio of Alexa Nichole Reoyo — 4th Year BS Computer Engineering Student." />
+  <!-- Google Fonts for Editorial Girly + Retro Display + Tech Monospace Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,600;1,9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-mode="scroll">
+
+  <!-- Decorative Floating Background Sparkles -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Top Navigation & Presentation Bar -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav" aria-label="Portfolio navigation">
+      <a href="#page-1" class="brand-pill" data-goto="0">
+        <span class="brand-dot">✦</span>
+        <span class="brand-text">ALEXA.CPE</span>
+      </a>
+
+      <ul class="page-links" id="pageLinks">
+        <li><a href="#page-1" class="nav-pill active" data-goto="0"><span class="num">01</span> Title</a></li>
+        <li><a href="#page-2" class="nav-pill" data-goto="1"><span class="num">02</span> About Me</a></li>
+        <li><a href="#page-3" class="nav-pill" data-goto="2"><span class="num">03</span> Skills</a></li>
+        <li><a href="#page-4" class="nav-pill" data-goto="3"><span class="num">04</span> Projects</a></li>
+        <li><a href="#page-5" class="nav-pill" data-goto="4"><span class="num">05</span> Experience</a></li>
+        <li><a href="#page-6" class="nav-pill" data-goto="5"><span class="num">06</span> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="mode-btn" id="autoplayBtn" title="Auto-play slides like a video">
+          <span class="icon" id="autoplayIcon">▶</span>
+          <span id="autoplayLabel">Play Video Tour</span>
+        </button>
+        <button type="button" class="mode-btn secondary" id="viewModeBtn" title="Switch between Scroll View and Slide Deck Mode">
+          <span class="icon">❖</span>
+          <span id="viewModeLabel">Slide Mode</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Autoplay / Slide Progress Bar -->
+    <div class="tour-progress-track" id="tourProgressTrack" aria-hidden="true">
+      <div class="tour-progress-bar" id="tourProgressBar"></div>
+    </div>
+  </header>
+
+  <!-- Main 6-Page Portfolio Deck -->
+  <main class="portfolio-deck" id="portfolioDeck">
+
+    <!-- ==========================================
+         PAGE 1: PORTFOLIO TITLE
+         (Mimics 'Marketing Portfolio' title slide -> 'Software Engineering Portfolio')
+         ========================================== -->
+    <section class="portfolio-page active-slide" id="page-1" data-page="1" aria-label="Page 1: Portfolio Title">
+      <div class="slide-frame title-slide-frame">
+        <!-- Top Retro Window Bar -->
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ ALEXA_NICHOLE_REOYO_PORTFOLIO.EXE — PAGE 01 / 06 ✦</div>
+          <div class="window-badge">2025–2026 EDITION</div>
+        </div>
+
+        <!-- Top Checkerboard Strip -->
+        <div class="checkerboard-strip"></div>
+
+        <!-- Slide Inner Canvas -->
+        <div class="slide-canvas title-canvas">
+          <!-- Left & Right Decorative Checkerboard Pillars -->
+          <div class="side-checker left-checker" aria-hidden="true"></div>
+          <div class="side-checker right-checker" aria-hidden="true"></div>
+
+          <!-- Floating Girly Computer Engineering Stickers -->
+          <div class="floating-sticker sticker-tl" aria-hidden="true">
+            <span class="sticker-inner">
+              <svg class="min-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              &lt;hello world /&gt;
+            </span>
+          </div>
+          <div class="floating-sticker sticker-tr" aria-hidden="true">
+            <span class="sticker-inner">
+              <svg class="min-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-3-4.5-8-5-8-1s5 3.5 8 1Z"/><path d="M12 12c3-4.5 8-5 8-1s-5 3.5-8 1Z"/><path d="M12 12l-4 7"/><path d="M12 12l4 7"/><circle cx="12" cy="12" r="1.5"/></svg>
+              4th Year BS CpE
+            </span>
+          </div>
+          <div class="floating-sticker sticker-bl" aria-hidden="true">
+            <span class="sticker-inner">
+              <svg class="min-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Hardware + Web + UI/UX
+            </span>
+          </div>
+          <div class="floating-sticker sticker-br" aria-hidden="true">
+            <span class="sticker-inner">
+              <svg class="min-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20L19 7l-4.5 4L12 5 9.5 11 5 7 2 18z"/></svg>
+              ICpEP.SE President
+            </span>
+          </div>
+
+          <!-- Sparkle Ornaments -->
+          <svg class="sparkle sp-1" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+          <svg class="sparkle sp-2" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+          <svg class="sparkle sp-3" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+          <svg class="sparkle sp-4" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+
+          <!-- Centerpiece Editorial Title Composition (Mimicking the viral 'Marketing Portfolio' Title Slide) -->
+          <div class="title-centerpiece">
+            <div class="editorial-kicker">
+              <span class="kicker-line"></span>
+              <span class="kicker-pill">✦ CREATIVE TECH &amp; ENGINEERING SHOWCASE ✦</span>
+              <span class="kicker-line"></span>
+            </div>
+
+            <!-- Layered 'Computer Engineering' Script + Display Header -->
+            <div class="hero-title-stack">
+              <div class="script-ribbon-wrap">
+                <span class="script-badge">Computer Engineering</span>
+              </div>
+
+              <h1 class="display-portfolio-word" aria-label="Computer Engineering Portfolio">
+                <span class="echo-outline" aria-hidden="true">PORTFOLIO</span>
+                <span class="main-word">PORTFOLIO</span>
+                <span class="echo-shadow" aria-hidden="true">PORTFOLIO</span>
+              </h1>
+            </div>
+
+            <!-- Presenter Name & Tagline Card -->
+            <div class="presenter-banner">
+              <div class="presenter-checker-cap" aria-hidden="true"></div>
+              <div class="presenter-info">
+                <p class="presenter-label">PRESENTED BY</p>
+                <h2 class="presenter-name">ALEXA NICHOLE REOYO</h2>
+                <p class="presenter-role">BS Computer Engineering Student • Web Developer • Hardware Enthusiast</p>
+              </div>
+              <div class="presenter-checker-cap" aria-hidden="true"></div>
+            </div>
+
+            <!-- Mini Table of Contents Pills (Like the cover slide index) -->
+            <div class="cover-index-pills" aria-label="Portfolio sections">
+              <a href="#page-2" class="index-chip" data-goto="1"><span>02</span> About Me</a>
+              <a href="#page-3" class="index-chip" data-goto="2"><span>03</span> Skills</a>
+              <a href="#page-4" class="index-chip" data-goto="3"><span>04</span> Projects</a>
+              <a href="#page-5" class="index-chip" data-goto="4"><span>05</span> Experience &amp; Leadership</a>
+              <a href="#page-6" class="index-chip" data-goto="5"><span>06</span> Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Marquee Ribbon -->
+        <div class="marquee-strip" aria-hidden="true">
+          <div class="marquee-track">
+            <span>✦ COMPUTER ENGINEERING PORTFOLIO ✦ ALEXA NICHOLE REOYO ✦ BS COMPUTER ENGINEERING ✦ WEB DEVELOPMENT ✦ ARDUINO &amp; ESP-32 ✦ UI/UX DESIGN ✦ STUDENT LEADER ✦</span>
+            <span>✦ COMPUTER ENGINEERING PORTFOLIO ✦ ALEXA NICHOLE REOYO ✦ BS COMPUTER ENGINEERING ✦ WEB DEVELOPMENT ✦ ARDUINO &amp; ESP-32 ✦ UI/UX DESIGN ✦ STUDENT LEADER ✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 2: ABOUT ME
+         ========================================== -->
+    <section class="portfolio-page" id="page-2" data-page="2" aria-label="Page 2: About Me">
+      <div class="slide-frame">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ 02_ABOUT_ME.HTML — PROFILE &amp; INTRODUCTION ✦</div>
+          <div class="window-badge">PAGE 02 / 06</div>
+        </div>
+
+        <div class="slide-canvas about-canvas">
+          <!-- Left Column: Professional Photo Placeholder with Checkerboard & Arch Frame -->
+          <div class="about-photo-col">
+            <div class="photo-stage">
+              <!-- Checkerboard Backdrop Card -->
+              <div class="photo-checker-backdrop" aria-hidden="true"></div>
+
+              <!-- Decorative Tape & Sparkles -->
+              <div class="washi-tape tape-top" aria-hidden="true"></div>
+              <svg class="sparkle photo-sp-1" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+              <svg class="sparkle photo-sp-2" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
+
+              <!-- Arch / Polaroid Photo Frame -->
+              <div class="polaroid-frame" id="photoDropZone" title="Click 'Upload Photo' below or drag & drop an image here">
+                <div class="polaroid-window-top">
+                  <span>● ● ●</span>
+                  <span class="mono-tag">PORTRAIT.PNG</span>
+                  <span>♡</span>
+                </div>
+
+                <div class="arch-photo-viewport">
+                  <!-- Custom Uploaded Photo Preview (Hidden until user uploads or if profile.jpg exists) -->
+                  <img id="customProfileImg" class="custom-profile-img" alt="Alexa Nichole Reoyo Portrait" hidden />
+
+                  <!-- Default Professional Girly CpE Student Portrait Placeholder (Matches Video Reference Style) -->
+                  <div class="placeholder-portrait" id="defaultPortraitPlaceholder">
+                    <svg viewBox="0 0 400 460" class="girly-portrait-svg" role="img" aria-label="Professional photo placeholder for Alexa Nichole Reoyo">
+                      <defs>
+                        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0%" stop-color="#FFE0EE" />
+                          <stop offset="50%" stop-color="#FFB8D6" />
+                          <stop offset="100%" stop-color="#FF8EC0" />
+                        </linearGradient>
+                        <linearGradient id="blazerGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#E82C7B" />
+                          <stop offset="100%" stop-color="#B8145A" />
+                        </linearGradient>
+                        <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0%" stop-color="#2E1120" />
+                          <stop offset="100%" stop-color="#17060F" />
+                        </linearGradient>
+                      </defs>
+
+                      <!-- Arch Background -->
+                      <rect width="400" height="460" fill="url(#bgGrad)" />
+                      <!-- Subtle Grid Pattern -->
+                      <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1">
+                        <line x1="0" y1="60" x2="400" y2="60" />
+                        <line x1="0" y1="120" x2="400" y2="120" />
+                        <line x1="0" y1="180" x2="400" y2="180" />
+                        <line x1="0" y1="240" x2="400" y2="240" />
+                        <line x1="0" y1="300" x2="400" y2="300" />
+                        <line x1="0" y1="360" x2="400" y2="360" />
+                        <line x1="60" y1="0" x2="60" y2="460" />
+                        <line x1="120" y1="0" x2="120" y2="460" />
+                        <line x1="180" y1="0" x2="180" y2="460" />
+                        <line x1="240" y1="0" x2="240" y2="460" />
+                        <line x1="300" y1="0" x2="300" y2="460" />
+                        <line x1="360" y1="0" x2="360" y2="460" />
+                      </g>
+
+                      <!-- Glowing Halo Circle Behind Portrait -->
+                      <circle cx="200" cy="205" r="130" fill="#FFF5F9" opacity="0.7" />
+                      <circle cx="200" cy="205" r="112" fill="none" stroke="#E82C7B" stroke-width="2.5" stroke-dasharray="6 6" />
+
+                      <!-- Back Flowing Hair -->
+                      <path d="M105 160 C85 240, 85 350, 108 430 L292 430 C315 350, 315 240, 295 160 C285 95, 245 70, 200 70 C155 70, 115 95, 105 160 Z" fill="url(#hairGrad)" />
+
+                      <!-- Neck & Shoulders / Professional Pink Blazer -->
+                      <path d="M72 460 C76 365, 125 332, 200 332 C275 332, 324 365, 328 460 Z" fill="url(#blazerGrad)" />
+                      <!-- White Inner Blouse -->
+                      <polygon points="165,335 235,335 215,435 185,435" fill="#FFF9FB" />
+                      <!-- Blazer Lapels -->
+                      <polygon points="165,332 135,368 185,435" fill="#C41962" />
+                      <polygon points="235,332 265,368 215,435" fill="#C41962" />
+                      <!-- Pearl Necklace Detail -->
+                      <path d="M174 342 Q200 362 226 342" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9" />
+
+                      <!-- Neck -->
+                      <rect x="178" y="275" width="44" height="72" rx="20" fill="#FAD2C8" />
+                      <path d="M178 300 Q200 318 222 300 L222 285 L178 285 Z" fill="#EBB5A7" opacity="0.5" />
+
+                      <!-- Head / Face -->
+                      <path d="M136 185 C136 128, 264 128, 264 185 C264 252, 236 296, 200 296 C164 296, 136 252, 136 185 Z" fill="#FFE0D6" />
+
+                      <!-- Soft Rosy Cheeks -->
+                      <ellipse cx="160" cy="232" rx="18" ry="10" fill="#FF6FA5" opacity="0.35" />
+                      <ellipse cx="240" cy="232" rx="18" ry="10" fill="#FF6FA5" opacity="0.35" />
+
+                      <!-- Eyes & Lashes -->
+                      <path d="M156 196 Q170 185 184 195" fill="none" stroke="#2E1120" stroke-width="3.5" stroke-linecap="round" />
+                      <path d="M216 195 Q230 185 244 196" fill="none" stroke="#2E1120" stroke-width="3.5" stroke-linecap="round" />
+                      <circle cx="170" cy="204" r="7.5" fill="#2E1120" />
+                      <circle cx="230" cy="204" r="7.5" fill="#2E1120" />
+                      <circle cx="172.5" cy="201.5" r="2.5" fill="#FFFFFF" />
+                      <circle cx="232.5" cy="201.5" r="2.5" fill="#FFFFFF" />
+
+                      <!-- Chic Rose-Gold Eyeglasses -->
+                      <rect x="148" y="188" width="44" height="30" rx="10" fill="#FFFFFF" fill-opacity="0.2" stroke="#D81B60" stroke-width="2.6" />
+                      <rect x="208" y="188" width="44" height="30" rx="10" fill="#FFFFFF" fill-opacity="0.2" stroke="#D81B60" stroke-width="2.6" />
+                      <line x1="192" y1="202" x2="208" y2="202" stroke="#D81B60" stroke-width="2.6" />
+
+                      <!-- Cute Nose & Confident Smile -->
+                      <path d="M198 214 Q194 230 202 232" fill="none" stroke="#D99B8C" stroke-width="2.5" stroke-linecap="round" />
+                      <path d="M182 252 Q200 268 218 252" fill="none" stroke="#D81B60" stroke-width="4" stroke-linecap="round" />
+
+                      <!-- Front Curtain Bangs & Hair Bow -->
+                      <path d="M132 190 C135 135, 175 115, 200 128 C225 115, 265 135, 268 190 C252 152, 222 142, 200 135 C178 142, 148 152, 132 190 Z" fill="url(#hairGrad)" />
+                      <!-- Pink Hair Ribbon Clips -->
+                      <path d="M126 168 L144 162 L138 178 Z" fill="#FF2E7E" />
+                      <path d="M274 168 L256 162 L262 178 Z" fill="#FF2E7E" />
+
+                      <!-- Stylish Laptop Silhouette at Bottom -->
+                      <rect x="122" y="388" width="156" height="72" rx="12" fill="#FFF0F6" stroke="#2B091A" stroke-width="3" />
+                      <circle cx="200" cy="424" r="12" fill="#FF2E7E" />
+                      <text x="200" y="428" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
+
+                      <!-- Photo Placeholder Banner Overlay -->
+                      <rect x="44" y="20" width="312" height="32" rx="16" fill="#2B091A" opacity="0.82" />
+                      <text x="200" y="41" text-anchor="middle" fill="#FFE4EE" font-size="11.5" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" letter-spacing="1.2">✦ PROFESSIONAL PHOTO PLACEHOLDER ✦</text>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="polaroid-caption">
+                  <div class="caption-left">
+                    <span class="status-dot"></span>
+                    <strong>ALEXA NICHOLE REOYO</strong>
+                  </div>
+                  <div class="photo-controls">
+                    <label for="photoInput" class="upload-photo-btn" title="Choose your own portrait photo">
+                      <svg class="min-icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                      Change Photo
+                    </label>
+                    <button type="button" id="resetPhotoBtn" class="reset-photo-btn" hidden title="Reset to default illustration">↺</button>
+                    <input type="file" id="photoInput" accept="image/*" hidden />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Status Sticker Overlapping Photo -->
+              <div class="photo-status-sticker">
+                <span class="spark">✦</span>
+                <div>
+                  <small>CURRENT STATUS</small>
+                  <strong>4th Year BS Computer Engineering</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: About Me Editorial Bio & Identity Card -->
+          <div class="about-content-col">
+            <div class="section-heading-group">
+              <span class="page-pill-tag">✦ PAGE 02 • GET TO KNOW ME</span>
+              <h2 class="editorial-section-title">
+                ABOUT <span class="italic-accent">Me</span>
+              </h2>
+            </div>
+
+            <!-- Name & Status Banner Card -->
+            <div class="identity-card">
+              <div class="identity-checker-side" aria-hidden="true"></div>
+              <div class="identity-main">
+                <div class="identity-row">
+                  <span class="field-label">NAME</span>
+                  <h3 class="identity-name">ALEXA NICHOLE REOYO</h3>
+                </div>
+                <div class="identity-row">
+                  <span class="field-label">STATUS</span>
+                  <p class="identity-status">
+                    <span class="status-pill-badge">4th Year BS Computer Engineering</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Bio Window Card (Exact Text from Prompt) -->
+            <div class="bio-window-card">
+              <div class="bio-window-header">
+                <span class="bio-dots">● ● ●</span>
+                <span class="bio-file">about_alexa.txt</span>
+                <span class="bio-heart">♥</span>
+              </div>
+              <div class="bio-window-body">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <p class="bio-paragraph">
+                  I am a Computer Engineering student with an interest in technology, programming, and problem-solving. I am eager to learn new skills, gain practical experience, and apply my knowledge to develop innovative and useful solutions. My goal is to grow professionally and contribute to a company's success.
+                </p>
+              </div>
+            </div>
+
+            <!-- Girly CpE Highlight Pills -->
+            <div class="about-highlights-grid">
+              <div class="highlight-mini-card">
+                <span class="hi-icon" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><polyline points="10 8 8 10 10 12"/><polyline points="14 8 16 10 14 12"/></svg>
+                </span>
+                <div>
+                  <strong>Tech &amp; Programming</strong>
+                  <span>Web &amp; Embedded Systems</span>
+                </div>
+              </div>
+              <div class="highlight-mini-card">
+                <span class="hi-icon" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+                </span>
+                <div>
+                  <strong>Problem-Solver</strong>
+                  <span>Innovative &amp; Useful Solutions</span>
+                </div>
+              </div>
+              <div class="highlight-mini-card">
+                <span class="hi-icon" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20L19 7l-4.5 4L12 5 9.5 11 5 7 2 18z"/><line x1="4" y1="21" x2="20" y2="21"/></svg>
+                </span>
+                <div>
+                  <strong>ICpEP.SE President</strong>
+                  <span>Student Leadership &amp; Service</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkerboard-strip bottom-strip"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 3: SKILLS
+         (Follows the 'Education' layout from the video, repurposed for Skills)
+         ========================================== -->
+    <section class="portfolio-page" id="page-3" data-page="3" aria-label="Page 3: Skills">
+      <div class="slide-frame">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ 03_SKILLS_MATRIX.JSON — TECHNICAL &amp; CREATIVE COMPETENCIES ✦</div>
+          <div class="window-badge">PAGE 03 / 06</div>
+        </div>
+
+        <div class="checkerboard-strip"></div>
+
+        <div class="slide-canvas skills-canvas">
+          <!-- Section Header (Styled like the 'Education' header in the video) -->
+          <div class="skills-header-bar">
+            <div class="skills-title-block">
+              <span class="page-pill-tag">✦ PAGE 03 • CORE COMPETENCIES</span>
+              <h2 class="editorial-section-title">
+                MY <span class="italic-accent">Skills</span> &amp; TOOLKIT
+              </h2>
+            </div>
+            <div class="skills-header-badge">
+              <div class="mini-checker-box" aria-hidden="true"></div>
+              <p>Computer Engineering • Software &amp; Hardware Stack</p>
+            </div>
+          </div>
+
+          <!-- Education-Style 4-Pillar Stepped Layout Repurposed for Skills -->
+          <div class="education-style-skills-grid">
+
+            <!-- SKILL 01: Web Development -->
+            <article class="edu-skill-card">
+              <div class="edu-card-top">
+                <span class="edu-step-badge">01</span>
+                <div class="edu-checker-tab" aria-hidden="true"></div>
+                <span class="edu-category-pill">FRONTEND &amp; WEB</span>
+              </div>
+              <div class="edu-card-body">
+                <div class="edu-icon-box" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3 class="edu-skill-title">Web Development</h3>
+                <p class="edu-skill-subtitle">HTML CSS JS</p>
+                <p class="edu-skill-desc">
+                  Building responsive, interactive, and visually expressive web interfaces using modern semantic markup, custom styling, and client-side scripting.
+                </p>
+                <div class="skill-chip-row">
+                  <span class="skill-chip">HTML5</span>
+                  <span class="skill-chip">CSS3</span>
+                  <span class="skill-chip">JavaScript</span>
+                  <span class="skill-chip">Responsive Web</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SKILL 02: Hardware -->
+            <article class="edu-skill-card featured-pink">
+              <div class="edu-card-top">
+                <span class="edu-step-badge">02</span>
+                <div class="edu-checker-tab" aria-hidden="true"></div>
+                <span class="edu-category-pill">EMBEDDED &amp; IOT</span>
+              </div>
+              <div class="edu-card-body">
+                <div class="edu-icon-box" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                </div>
+                <h3 class="edu-skill-title">Hardware</h3>
+                <p class="edu-skill-subtitle">ESP-32, Arduino, basic Electronic, circuit design</p>
+                <p class="edu-skill-desc">
+                  Hands-on prototyping with microcontrollers, biomedical/environmental sensors, breadboarding, basic electronics, and schematic circuit design.
+                </p>
+                <div class="skill-chip-row">
+                  <span class="skill-chip">ESP-32</span>
+                  <span class="skill-chip">Arduino</span>
+                  <span class="skill-chip">Basic Electronic</span>
+                  <span class="skill-chip">Circuit Design</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SKILL 03: Encoding -->
+            <article class="edu-skill-card">
+              <div class="edu-card-top">
+                <span class="edu-step-badge">03</span>
+                <div class="edu-checker-tab" aria-hidden="true"></div>
+                <span class="edu-category-pill">PRODUCTIVITY &amp; DATA</span>
+              </div>
+              <div class="edu-card-body">
+                <div class="edu-icon-box" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+                </div>
+                <h3 class="edu-skill-title">Encoding</h3>
+                <p class="edu-skill-subtitle">Microsoft Office</p>
+                <p class="edu-skill-desc">
+                  High-accuracy data encoding, municipal records management, technical documentation, spreadsheets, and executive presentations.
+                </p>
+                <div class="skill-chip-row">
+                  <span class="skill-chip">Microsoft Office</span>
+                  <span class="skill-chip">MS Word</span>
+                  <span class="skill-chip">MS Excel</span>
+                  <span class="skill-chip">MS PowerPoint</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SKILL 04: UI/UX Design Fundamental -->
+            <article class="edu-skill-card featured-pink">
+              <div class="edu-card-top">
+                <span class="edu-step-badge">04</span>
+                <div class="edu-checker-tab" aria-hidden="true"></div>
+                <span class="edu-category-pill">CREATIVE DESIGN</span>
+              </div>
+              <div class="edu-card-body">
+                <div class="edu-icon-box" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/><circle cx="15" cy="15" r="2.5"/></svg>
+                </div>
+                <h3 class="edu-skill-title">UI/UX Design Fundamental</h3>
+                <p class="edu-skill-subtitle">User Interface &amp; Experience Principles</p>
+                <p class="edu-skill-desc">
+                  Crafting user-centered layouts, cohesive color palettes, creative typography, wireframes, and intuitive digital experiences.
+                </p>
+                <div class="skill-chip-row">
+                  <span class="skill-chip">UI/UX Design Fundamental</span>
+                  <span class="skill-chip">Wireframing</span>
+                  <span class="skill-chip">Visual Hierarchy</span>
+                  <span class="skill-chip">Prototyping</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Bottom Decorative Summary Bar -->
+          <div class="skills-footer-note">
+            <span class="sparkle-inline">✦</span>
+            <span>Combining <strong>Computer Engineering</strong> precision with <strong>Creative Visual Design</strong> &amp; <strong>Hardware Prototyping</strong></span>
+            <span class="sparkle-inline">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 4: PROJECTS
+         (Similar to 'What's In' or 'Media & Campaigns' pages in the video)
+         ========================================== -->
+    <section class="portfolio-page" id="page-4" data-page="4" aria-label="Page 4: Projects">
+      <div class="slide-frame">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ 04_FEATURED_PROJECTS.SHOWCASE — WHAT'S IN MY LAB ✦</div>
+          <div class="window-badge">PAGE 04 / 06</div>
+        </div>
+
+        <div class="slide-canvas projects-canvas">
+          <!-- 'What's In / Media & Campaigns' Editorial Header -->
+          <div class="projects-editorial-header">
+            <div class="whats-in-badge">
+              <span class="checker-pill" aria-hidden="true"></span>
+              <span>✦ WHAT'S IN • MEDIA &amp; BUILDS ✦</span>
+            </div>
+            <h2 class="editorial-section-title">
+              FEATURED <span class="italic-accent">Projects</span>
+            </h2>
+            <p class="section-subtext">
+              Explore my live web development and Arduino hardware engineering projects—click any card to launch the live site or GitHub repository!
+            </p>
+          </div>
+
+          <!-- 3-Column Campaign / Showcase Cards -->
+          <div class="projects-showcase-grid">
+
+            <!-- PROJECT 1: Discover Antipolo -->
+            <article class="campaign-project-card">
+              <div class="campaign-window-bar">
+                <span class="win-dots">● ● ●</span>
+                <span class="win-num">PROJECT 01 • LIVE WEBSITE</span>
+                <span class="win-star">✦</span>
+              </div>
+
+              <!-- Visual Mockup Preview -->
+              <div class="campaign-visual preview-antipolo">
+                <div class="visual-checker-corner" aria-hidden="true"></div>
+                <div class="browser-mockup">
+                  <div class="mockup-url-bar">alexanicholereoyo27-star.github.io/Discover-Antipolo/</div>
+                  <div class="mockup-screen">
+                    <span class="mockup-kicker">TOURISM &amp; HERITAGE GUIDE</span>
+                    <h4>Discover <span>Antipolo</span></h4>
+                    <p>Destinations • Culture • Local Hospitality</p>
+                    <div class="mockup-mini-pills">
+                      <span>✦ Destinations</span>
+                      <span>✦ Heritage</span>
+                      <span>✦ Travel UI</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="campaign-card-body">
+                <div class="project-tags">
+                  <span>Web Development</span>
+                  <span>HTML • CSS • JS</span>
+                  <span>UI/UX</span>
+                </div>
+                <h3 class="project-title">Discover Antipolo</h3>
+                <p class="project-description">
+                  An interactive tourism and heritage web guide showcasing Antipolo City's iconic destinations, hospitality spots, and cultural landmarks with responsive navigation.
+                </p>
+                <div class="project-url-box">
+                  <code>https://alexanicholereoyo27-star.github.io/Discover-Antipolo/</code>
+                </div>
+                <a href="https://alexanicholereoyo27-star.github.io/Discover-Antipolo/" target="_blank" rel="noopener noreferrer" class="project-cta-btn">
+                  <span>Visit Live Website</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 2: 3d Ball Spirometer -->
+            <article class="campaign-project-card highlight-campaign">
+              <div class="campaign-window-bar">
+                <span class="win-dots">● ● ●</span>
+                <span class="win-num">PROJECT 02 • HARDWARE &amp; INO</span>
+                <span class="win-star">✦</span>
+              </div>
+
+              <!-- Visual Mockup Preview -->
+              <div class="campaign-visual preview-spirometer">
+                <div class="visual-checker-corner" aria-hidden="true"></div>
+                <div class="hardware-mockup">
+                  <div class="spirometer-chambers" aria-hidden="true">
+                    <div class="chamber"><span class="ball b1"></span><small>600 cc</small></div>
+                    <div class="chamber"><span class="ball b2"></span><small>900 cc</small></div>
+                    <div class="chamber"><span class="ball b3"></span><small>1200 cc</small></div>
+                  </div>
+                  <div class="hardware-caption">
+                    <strong>3-Ball Incentive Spirometer</strong>
+                    <span>Arduino Sensor &amp; Respiratory Tracking</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="campaign-card-body">
+                <div class="project-tags">
+                  <span>Arduino (.ino)</span>
+                  <span>Hardware</span>
+                  <span>Biomedical CpE</span>
+                </div>
+                <h3 class="project-title">3d Ball Spirometer</h3>
+                <p class="project-description">
+                  A Computer Engineering hardware &amp; microcontroller project integrating sensor instrumentation with a 3-ball spirometer design for respiratory measurement and monitoring.
+                </p>
+                <div class="project-url-box">
+                  <code>https://github.com/monicaerannonan/3-Ball-Spirometer</code>
+                </div>
+                <a href="https://github.com/monicaerannonan/3-Ball-Spirometer" target="_blank" rel="noopener noreferrer" class="project-cta-btn">
+                  <span>View on GitHub</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 3: SPO2 using Arduino -->
+            <article class="campaign-project-card">
+              <div class="campaign-window-bar">
+                <span class="win-dots">● ● ●</span>
+                <span class="win-num">PROJECT 03 • EMBEDDED SENSOR</span>
+                <span class="win-star">✦</span>
+              </div>
+
+              <!-- Visual Mockup Preview -->
+              <div class="campaign-visual preview-spo2">
+                <div class="visual-checker-corner" aria-hidden="true"></div>
+                <div class="oximeter-mockup">
+                  <div class="oximeter-screen">
+                    <div class="ox-metric">
+                      <small>SpO2 %</small>
+                      <strong>98<span>%</span></strong>
+                    </div>
+                    <div class="ox-divider"></div>
+                    <div class="ox-metric">
+                      <small>PR BPM</small>
+                      <strong>76<span>♥</span></strong>
+                    </div>
+                  </div>
+                  <svg class="pulse-wave-svg" viewBox="0 0 220 44" aria-hidden="true">
+                    <polyline fill="none" stroke="#FF2E7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                      points="0,24 35,24 48,10 58,38 70,6 82,40 92,18 105,24 145,24 158,10 168,36 180,8 192,38 202,24 220,24" />
+                  </svg>
+                  <span class="ox-tag">pulse_oximeter.ino • Arduino Circuit</span>
+                </div>
+              </div>
+
+              <div class="campaign-card-body">
+                <div class="project-tags">
+                  <span>Arduino</span>
+                  <span>Circuit Design</span>
+                  <span>Pulse Oximetry</span>
+                </div>
+                <h3 class="project-title">SPO2 using Arduino</h3>
+                <p class="project-description">
+                  Blood oxygen saturation (SpO2) and heart-rate pulse oximeter system built with Arduino microcontroller firmware and electronic sensor circuit design.
+                </p>
+                <div class="project-url-box">
+                  <code>https://github.com/monicaerannonan/SPO2-using-Arduino</code>
+                </div>
+                <a href="https://github.com/monicaerannonan/SPO2-using-Arduino" target="_blank" rel="noopener noreferrer" class="project-cta-btn">
+                  <span>View on GitHub</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="checkerboard-strip bottom-strip"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 5: EXPERIENCE & LEADERSHIP
+         (Emulates the timeline / work experience format shown in the video)
+         ========================================== -->
+    <section class="portfolio-page" id="page-5" data-page="5" aria-label="Page 5: Experience and Leadership">
+      <div class="slide-frame">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ 05_EXPERIENCE_AND_LEADERSHIP.LOG — TIMELINE &amp; SERVICE ✦</div>
+          <div class="window-badge">PAGE 05 / 06</div>
+        </div>
+
+        <div class="checkerboard-strip"></div>
+
+        <div class="slide-canvas experience-canvas">
+          <div class="exp-header">
+            <span class="page-pill-tag">✦ PAGE 05 • CAREER &amp; CAMPUS JOURNEY</span>
+            <h2 class="editorial-section-title">
+              EXPERIENCE &amp; <span class="italic-accent">Leadership</span>
+            </h2>
+          </div>
+
+          <div class="exp-split-layout">
+
+            <!-- LEFT COLUMN: Leadership Timeline -->
+            <div class="exp-column leadership-col">
+              <div class="col-banner-header">
+                <span class="col-icon" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20L19 7l-4.5 4L12 5 9.5 11 5 7 2 18z"/><line x1="4" y1="21" x2="20" y2="21"/></svg>
+                </span>
+                <div>
+                  <h3>Leadership</h3>
+                  <p>Student Governance &amp; Engineering Organizations</p>
+                </div>
+                <div class="col-checker-accent" aria-hidden="true"></div>
+              </div>
+
+              <div class="girly-timeline">
+                <!-- 2025 -->
+                <div class="timeline-item current-role">
+                  <div class="timeline-marker">
+                    <span class="year-badge">2025</span>
+                    <span class="node-dot">✦</span>
+                  </div>
+                  <div class="timeline-card">
+                    <span class="role-tag">EXECUTIVE LEADERSHIP</span>
+                    <h4 class="timeline-title">President Institute of Computer Engineering of the Philippines - ICCT Chapter</h4>
+                    <p class="timeline-org">ICpEP.SE — ICCT Colleges Chapter</p>
+                  </div>
+                </div>
+
+                <!-- 2024 VP -->
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span class="year-badge">2024</span>
+                    <span class="node-dot">●</span>
+                  </div>
+                  <div class="timeline-card">
+                    <span class="role-tag">CHAPTER OFFICER</span>
+                    <h4 class="timeline-title">Vice President Institute of Computer Engineering of the Philippines - ICCT Chapter</h4>
+                    <p class="timeline-org">ICpEP.SE — ICCT Colleges Chapter</p>
+                  </div>
+                </div>
+
+                <!-- 2024 Tech & Research -->
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span class="year-badge">2024</span>
+                    <span class="node-dot">●</span>
+                  </div>
+                  <div class="timeline-card">
+                    <span class="role-tag">TECHNICAL COMMITTEE</span>
+                    <h4 class="timeline-title">ICCT Engineering Society Technical and Research</h4>
+                    <p class="timeline-org">ICCT Engineering Society</p>
+                  </div>
+                </div>
+
+                <!-- 2023 Junior Office -->
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span class="year-badge">2023</span>
+                    <span class="node-dot">●</span>
+                  </div>
+                  <div class="timeline-card">
+                    <span class="role-tag">FOUNDATION ROLE</span>
+                    <h4 class="timeline-title">Junior Office ICCT Engineering Society</h4>
+                    <p class="timeline-org">ICCT Engineering Society</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Work Experience -->
+            <div class="exp-column work-col">
+              <div class="col-banner-header work-banner">
+                <span class="col-icon" aria-hidden="true">
+                  <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </span>
+                <div>
+                  <h3>Work Experience</h3>
+                  <p>Public Sector &amp; Municipal Operations</p>
+                </div>
+                <div class="col-checker-accent" aria-hidden="true"></div>
+              </div>
+
+              <div class="work-cards-stack">
+                <!-- Work Experience 1 -->
+                <article class="work-exp-card">
+                  <div class="work-card-window">
+                    <span>● ● ●</span>
+                    <span>WORK_EXPERIENCE_01</span>
+                    <span>✦</span>
+                  </div>
+                  <div class="work-card-content">
+                    <div class="work-badge-row">
+                      <span class="gov-pill">✦ Antipolo City Government</span>
+                      <span class="dept-pill">Department of CEWMO</span>
+                    </div>
+                    <h4 class="work-title">Antipolo City Government Assistant Encoder - Department of CEWMO</h4>
+                    <p class="work-desc">
+                      Assisted in municipal records management, digital data entry, and administrative documentation workflows for the City Environment and Waste Management Office (CEWMO).
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Work Experience 2 -->
+                <article class="work-exp-card">
+                  <div class="work-card-window">
+                    <span>● ● ●</span>
+                    <span>WORK_EXPERIENCE_02</span>
+                    <span>✦</span>
+                  </div>
+                  <div class="work-card-content">
+                    <div class="work-badge-row">
+                      <span class="gov-pill">✦ Antipolo City Government</span>
+                      <span class="dept-pill">Department of CEWMO</span>
+                    </div>
+                    <h4 class="work-title">Antipolo City Government Encoder - Department of CEWMO</h4>
+                    <p class="work-desc">
+                      Performed systematic encoding, database organization, and Microsoft Office report preparation supporting daily operations at the Department of CEWMO.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Decorative Girly Engineering Sticker Card -->
+                <div class="work-summary-sticker">
+                  <div class="sticker-checker-bar" aria-hidden="true"></div>
+                  <div class="sticker-text">
+                    <strong>✦ Ready for Computer &amp; Software Engineering Opportunities!</strong>
+                    <span>Combining leadership, public service discipline, and hands-on technical skills.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 6: CONTACT
+         (Clean contact page / final slide in the video's pink checkerboard style)
+         ========================================== -->
+    <section class="portfolio-page" id="page-6" data-page="6" aria-label="Page 6: Contact">
+      <div class="slide-frame contact-slide-frame">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-pink"></span>
+            <span class="dot dot-blush"></span>
+            <span class="dot dot-cream"></span>
+          </div>
+          <div class="window-title">✦ 06_CONTACT_ME.SH — LET'S WORK TOGETHER! ✦</div>
+          <div class="window-badge">PAGE 06 / 06</div>
+        </div>
+
+        <div class="checkerboard-strip"></div>
+
+        <div class="slide-canvas contact-canvas">
+          <!-- Decorative Checkerboard Side Panels -->
+          <div class="side-checker left-checker" aria-hidden="true"></div>
+          <div class="side-checker right-checker" aria-hidden="true"></div>
+
+          <div class="contact-center-wrap">
+            <span class="page-pill-tag">✦ PAGE 06 • GET IN TOUCH</span>
+
+            <h2 class="contact-hero-heading">
+              LET'S <span class="italic-accent">Connect</span> &amp; CREATE!
+            </h2>
+            <p class="contact-lead">
+              Thank you for viewing my <strong>Computer Engineering Portfolio</strong>! Reach out anytime for internships, collaborations, or engineering opportunities.
+            </p>
+
+            <!-- 4 Contact Cards Grid (Phone, Email, GitHub, Facebook) -->
+            <div class="contact-cards-grid">
+
+              <!-- Phone -->
+              <div class="contact-card clickable-card" data-href="tel:09127389136" role="link" tabindex="0">
+                <div class="contact-card-top">
+                  <span class="c-icon" aria-hidden="true">
+                    <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                  </span>
+                  <span class="c-label">PHONE</span>
+                  <button type="button" class="copy-chip" data-copy="09127389136" title="Copy phone number">Copy</button>
+                </div>
+                <a href="tel:09127389136" class="contact-value">09127389136</a>
+                <a href="tel:09127389136" class="contact-sub">Call or SMS Anytime ↗</a>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-card clickable-card" data-href="https://mail.google.com/mail/?view=cm&fs=1&to=alexanichole.reoyo301426@gmail.com" data-target="_blank" role="link" tabindex="0">
+                <div class="contact-card-top">
+                  <span class="c-icon" aria-hidden="true">
+                    <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <span class="c-label">EMAIL</span>
+                  <button type="button" class="copy-chip" data-copy="alexanichole.reoyo301426@gmail.com" title="Copy email address">Copy</button>
+                </div>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexanichole.reoyo301426@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-value email-val">alexanichole.reoyo301426@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexanichole.reoyo301426@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-sub">Direct Inbox (Gmail) ↗</a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card clickable-card" data-href="https://github.com/alexanicholereoyo27-star" data-target="_blank" role="link" tabindex="0">
+                <div class="contact-card-top">
+                  <span class="c-icon" aria-hidden="true">
+                    <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                  </span>
+                  <span class="c-label">GITHUB</span>
+                  <button type="button" class="copy-chip" data-copy="https://github.com/alexanicholereoyo27-star" title="Copy GitHub link">Copy</button>
+                </div>
+                <a href="https://github.com/alexanicholereoyo27-star" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  https://github.com/alexanicholereoyo27-star
+                </a>
+                <a href="https://github.com/alexanicholereoyo27-star" target="_blank" rel="noopener noreferrer" class="contact-sub">Explore Repositories &amp; Code ↗</a>
+              </div>
+
+              <!-- Facebook -->
+              <div class="contact-card clickable-card" data-href="https://www.facebook.com/share/1VvtHFLvSB/" data-target="_blank" role="link" tabindex="0">
+                <div class="contact-card-top">
+                  <span class="c-icon" aria-hidden="true">
+                    <svg class="min-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </span>
+                  <span class="c-label">FACEBOOK</span>
+                  <button type="button" class="copy-chip" data-copy="https://www.facebook.com/share/1VvtHFLvSB/" title="Copy Facebook link">Copy</button>
+                </div>
+                <a href="https://www.facebook.com/share/1VvtHFLvSB/" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  https://www.facebook.com/share/1VvtHFLvSB/
+                </a>
+                <a href="https://www.facebook.com/share/1VvtHFLvSB/" target="_blank" rel="noopener noreferrer" class="contact-sub">Connect on Social Media ↗</a>
+              </div>
+
+            </div>
+
+            <!-- Final Sign-off Card -->
+            <div class="thank-you-footer-card">
+              <div class="ty-checker-dot" aria-hidden="true"></div>
+              <div class="ty-text">
+                <strong>ALEXA NICHOLE REOYO</strong>
+                <span>4th Year BS Computer Engineering • Computer Engineering Portfolio</span>
+              </div>
+              <a href="#page-1" class="back-to-top-pill" data-goto="0">↑ Back to Cover</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkerboard-strip bottom-strip"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Slide Deck Controls (Visible in Slide Mode or Bottom Corner) -->
+  <div class="deck-controls" id="deckControls" aria-label="Slide navigation controls">
+    <button type="button" class="deck-arrow" id="prevSlideBtn" aria-label="Previous page">← Prev</button>
+    <div class="deck-indicator" id="deckIndicator">PAGE 01 / 06</div>
+    <button type="button" class="deck-arrow" id="nextSlideBtn" aria-label="Next page">Next →</button>
+  </div>
+
+  <!-- Copy Notification Toast -->
+  <div class="girly-toast" id="girlyToast" role="status" aria-live="polite" hidden>
+    ✦ Copied to clipboard! ✦
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
