@@ -190,7 +190,7 @@
               <svg class="sparkle photo-sp-2" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 0C34 22 42 30 64 32C42 34 34 42 32 64C30 42 22 34 0 32C22 30 30 22 32 0Z"/></svg>
 
               <!-- Picture Container Frame -->
-              <div class="polaroid-frame" id="photoDropZone" title="Click 'Change Photo' below or drag & drop an image here">
+              <div class="polaroid-frame" id="photoDropZone">
                 <div class="polaroid-window-top">
                   <span>● ● ●</span>
                   <span class="mono-tag">✦ PROFILE_CONTAINER ✦</span>
@@ -198,116 +198,7 @@
                 </div>
 
                 <div class="arch-photo-viewport">
-                  <!-- Custom Uploaded Photo Preview (Hidden until user uploads or if profile.jpg exists) -->
-                  <img id="customProfileImg" class="custom-profile-img" alt="Alexa Nichole Reoyo Portrait" hidden />
-
-                  <!-- Default Professional Girly CpE Student Portrait Placeholder (Matches Video Reference Style) -->
-                  <div class="placeholder-portrait" id="defaultPortraitPlaceholder">
-                    <svg viewBox="0 0 400 460" class="girly-portrait-svg" role="img" aria-label="Professional photo placeholder for Alexa Nichole Reoyo">
-                      <defs>
-                        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-                          <stop offset="0%" stop-color="#FFE0EE" />
-                          <stop offset="50%" stop-color="#FFB8D6" />
-                          <stop offset="100%" stop-color="#FF8EC0" />
-                        </linearGradient>
-                        <linearGradient id="blazerGrad" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stop-color="#E82C7B" />
-                          <stop offset="100%" stop-color="#B8145A" />
-                        </linearGradient>
-                        <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
-                          <stop offset="0%" stop-color="#2E1120" />
-                          <stop offset="100%" stop-color="#17060F" />
-                        </linearGradient>
-                      </defs>
-
-                      <!-- Arch Background -->
-                      <rect width="400" height="460" fill="url(#bgGrad)" />
-                      <!-- Subtle Grid Pattern -->
-                      <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1">
-                        <line x1="0" y1="60" x2="400" y2="60" />
-                        <line x1="0" y1="120" x2="400" y2="120" />
-                        <line x1="0" y1="180" x2="400" y2="180" />
-                        <line x1="0" y1="240" x2="400" y2="240" />
-                        <line x1="0" y1="300" x2="400" y2="300" />
-                        <line x1="0" y1="360" x2="400" y2="360" />
-                        <line x1="60" y1="0" x2="60" y2="460" />
-                        <line x1="120" y1="0" x2="120" y2="460" />
-                        <line x1="180" y1="0" x2="180" y2="460" />
-                        <line x1="240" y1="0" x2="240" y2="460" />
-                        <line x1="300" y1="0" x2="300" y2="460" />
-                        <line x1="360" y1="0" x2="360" y2="460" />
-                      </g>
-
-                      <!-- Glowing Halo Circle Behind Portrait -->
-                      <circle cx="200" cy="205" r="130" fill="#FFF5F9" opacity="0.7" />
-                      <circle cx="200" cy="205" r="112" fill="none" stroke="#E82C7B" stroke-width="2.5" stroke-dasharray="6 6" />
-
-                      <!-- Back Flowing Hair -->
-                      <path d="M105 160 C85 240, 85 350, 108 430 L292 430 C315 350, 315 240, 295 160 C285 95, 245 70, 200 70 C155 70, 115 95, 105 160 Z" fill="url(#hairGrad)" />
-
-                      <!-- Neck & Shoulders / Professional Pink Blazer -->
-                      <path d="M72 460 C76 365, 125 332, 200 332 C275 332, 324 365, 328 460 Z" fill="url(#blazerGrad)" />
-                      <!-- White Inner Blouse -->
-                      <polygon points="165,335 235,335 215,435 185,435" fill="#FFF9FB" />
-                      <!-- Blazer Lapels -->
-                      <polygon points="165,332 135,368 185,435" fill="#C41962" />
-                      <polygon points="235,332 265,368 215,435" fill="#C41962" />
-                      <!-- Pearl Necklace Detail -->
-                      <path d="M174 342 Q200 362 226 342" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9" />
-
-                      <!-- Neck -->
-                      <rect x="178" y="275" width="44" height="72" rx="20" fill="#FAD2C8" />
-                      <path d="M178 300 Q200 318 222 300 L222 285 L178 285 Z" fill="#EBB5A7" opacity="0.5" />
-
-                      <!-- Head / Face -->
-                      <path d="M136 185 C136 128, 264 128, 264 185 C264 252, 236 296, 200 296 C164 296, 136 252, 136 185 Z" fill="#FFE0D6" />
-
-                      <!-- Soft Rosy Cheeks -->
-                      <ellipse cx="160" cy="232" rx="18" ry="10" fill="#FF6FA5" opacity="0.35" />
-                      <ellipse cx="240" cy="232" rx="18" ry="10" fill="#FF6FA5" opacity="0.35" />
-
-                      <!-- Eyes & Lashes -->
-                      <path d="M156 196 Q170 185 184 195" fill="none" stroke="#2E1120" stroke-width="3.5" stroke-linecap="round" />
-                      <path d="M216 195 Q230 185 244 196" fill="none" stroke="#2E1120" stroke-width="3.5" stroke-linecap="round" />
-                      <circle cx="170" cy="204" r="7.5" fill="#2E1120" />
-                      <circle cx="230" cy="204" r="7.5" fill="#2E1120" />
-                      <circle cx="172.5" cy="201.5" r="2.5" fill="#FFFFFF" />
-                      <circle cx="232.5" cy="201.5" r="2.5" fill="#FFFFFF" />
-
-                      <!-- Chic Rose-Gold Eyeglasses -->
-                      <rect x="148" y="188" width="44" height="30" rx="10" fill="#FFFFFF" fill-opacity="0.2" stroke="#D81B60" stroke-width="2.6" />
-                      <rect x="208" y="188" width="44" height="30" rx="10" fill="#FFFFFF" fill-opacity="0.2" stroke="#D81B60" stroke-width="2.6" />
-                      <line x1="192" y1="202" x2="208" y2="202" stroke="#D81B60" stroke-width="2.6" />
-
-                      <!-- Cute Nose & Confident Smile -->
-                      <path d="M198 214 Q194 230 202 232" fill="none" stroke="#D99B8C" stroke-width="2.5" stroke-linecap="round" />
-                      <path d="M182 252 Q200 268 218 252" fill="none" stroke="#D81B60" stroke-width="4" stroke-linecap="round" />
-
-                      <!-- Front Curtain Bangs & Hair Bow -->
-                      <path d="M132 190 C135 135, 175 115, 200 128 C225 115, 265 135, 268 190 C252 152, 222 142, 200 135 C178 142, 148 152, 132 190 Z" fill="url(#hairGrad)" />
-                      <!-- Pink Hair Ribbon Clips -->
-                      <path d="M126 168 L144 162 L138 178 Z" fill="#FF2E7E" />
-                      <path d="M274 168 L256 162 L262 178 Z" fill="#FF2E7E" />
-
-                      <!-- Stylish Laptop Silhouette at Bottom -->
-                      <rect x="122" y="388" width="156" height="72" rx="12" fill="#FFF0F6" stroke="#2B091A" stroke-width="3" />
-                      <circle cx="200" cy="424" r="12" fill="#FF2E7E" />
-                      <text x="200" y="428" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
-
-                    </svg>
-                  </div>
-                </div>
-
-                <!-- Clean Photo Controls -->
-                <div class="polaroid-caption">
-                  <div class="photo-controls">
-                    <label for="photoInput" class="upload-photo-btn" title="Choose your own portrait photo">
-                      <svg class="min-icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                      Change Photo
-                    </label>
-                    <button type="button" id="resetPhotoBtn" class="reset-photo-btn" hidden title="Reset to default illustration">↺</button>
-                    <input type="file" id="photoInput" accept="image/*" hidden />
-                  </div>
+                  <img id="customProfileImg" class="custom-profile-img" src="profile.jpg" alt="Alexa Nichole Reoyo Portrait" />
                 </div>
               </div>
             </div>

@@ -203,82 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
   pages.forEach((page) => observer.observe(page));
 
   // =========================================================================
-  // PHOTO PLACEHOLDER UPLOADER (Page 2: About Me)
+  // PROFILE PHOTO INITIALIZATION (Page 2: About Me)
   // =========================================================================
-  const photoInput = document.getElementById('photoInput');
-  const customProfileImg = document.getElementById('customProfileImg');
-  const defaultPlaceholder = document.getElementById('defaultPortraitPlaceholder');
-  const resetPhotoBtn = document.getElementById('resetPhotoBtn');
-  const photoDropZone = document.getElementById('photoDropZone');
-  const STORAGE_KEY = 'alexa_portfolio_custom_photo_v1';
-
-  function applyCustomPhoto(dataUrl) {
-    if (!customProfileImg || !defaultPlaceholder) return;
-    customProfileImg.src = dataUrl;
-    customProfileImg.hidden = false;
-    defaultPlaceholder.hidden = true;
-    if (resetPhotoBtn) resetPhotoBtn.hidden = false;
-  }
-
-  function resetToDefaultPhoto() {
-    if (!customProfileImg || !defaultPlaceholder) return;
-    customProfileImg.removeAttribute('src');
-    customProfileImg.hidden = true;
-    defaultPlaceholder.hidden = false;
-    if (resetPhotoBtn) resetPhotoBtn.hidden = true;
-    try {
-      localStorage.removeItem(STORAGE_KEY);
-    } catch (_) {}
-  }
-
-  function handlePhotoFile(file) {
-    if (!file || !file.type.startsWith('image/')) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      const result = ev.target?.result;
-      if (typeof result === 'string') {
-        applyCustomPhoto(result);
-        try {
-          localStorage.setItem(STORAGE_KEY, result);
-        } catch (_) {}
-        showToast('✦ Portrait photo updated! ✦');
-      }
-    };
-    reader.readAsDataURL(file);
-  }
-
-  // Restore saved photo from localStorage if available
+  // Clear any legacy test upload from localStorage so profile.jpg is always loaded
   try {
-    const savedPhoto = localStorage.getItem(STORAGE_KEY);
-    if (savedPhoto) {
-      applyCustomPhoto(savedPhoto);
-    }
+    localStorage.removeItem('alexa_portfolio_custom_photo_v1');
   } catch (_) {}
-
-  if (photoInput) {
-    photoInput.addEventListener('change', (e) => {
-      const file = e.target.files?.[0];
-      if (file) handlePhotoFile(file);
-    });
-  }
-
-  if (resetPhotoBtn) {
-    resetPhotoBtn.addEventListener('click', () => {
-      resetToDefaultPhoto();
-      showToast('✦ Restored placeholder illustration ✦');
-    });
-  }
-
-  if (photoDropZone) {
-    photoDropZone.addEventListener('dragover', (e) => {
-      e.preventDefault();
-    });
-    photoDropZone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const file = e.dataTransfer?.files?.[0];
-      if (file) handlePhotoFile(file);
-    });
-  }
 
   // =========================================================================
   // COPY TO CLIPBOARD & TOAST (Page 6: Contact)
